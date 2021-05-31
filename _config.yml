@@ -8,10 +8,9 @@ middle_name: D.
 last_name: Chowdhury
 email: shoumik.chowdhury@yale.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace website.
+  Shoumik's Personal Website!
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio">al-folio</a> / <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 url:
 baseurl: # the subpath of your site, e.g. /blog/
@@ -62,8 +61,8 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: blog  # your blog must have a name for it to show up in the nav bar
+blog_description: a mostly random collection of writings
 permalink: /blog/:year/:title/
 
 # Pagination
