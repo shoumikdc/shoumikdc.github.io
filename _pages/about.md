@@ -21,16 +21,11 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-Hello! My name is Shoumik and I'm a first-year PhD student in quantum engineering at MIT. I am broadly interested in experimental and applied theoretical quantum information science, and currently work in the MIT Engineering Quantum Systems ([EQuS](https://equs.mit.edu/)) group. My work is funded by the NSF Graduate Fellowship and the MIT Jacobs Presidential Fellowship.
+Hello! My name is Shoumik and I'm a first-year PhD student in quantum engineering at MIT. I am broadly interested in experimental and applied theoretical quantum information science, and currently work in the MIT Engineering Quantum Systems ([EQuS](https://equs.mit.edu/)) group, with Prof. Will Oliver. My work is supported by the NSF Graduate Fellowship and the MIT Jacobs Presidential Fellowship.
 
-I previously received a B.S. in Mathematics and Physics at Yale University, where I was also fortunate to work on research with Profs. Michel Devoret, Liang Jiang, and David Moore.
+This summer I be working as a Research Scientist intern at Amazon Web Services (AWS), at the AWS-Caltech Centre for Quantum Computing.
 
-
-
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
+I previously received a B.S. in Mathematics and Physics at Yale University, where I was fortunate to work with Profs. Michel Devoret, Liang Jiang, and David Moore. As an undergraduate, I also worked as a Junior Quantum Engineer at [Rigetti Computing](https://www.rigetti.com/).
 
 
 
