@@ -4,7 +4,7 @@ title: about
 permalink: /
 description: |
   <small>
-  Quantum Physicist and Engineer &nbsp; ♦ &nbsp;  Graduate Student Researcher <br>
+  Quantum Physicist and Engineer &nbsp; ♦ &nbsp;  Graduate Researcher <br>
   <a href="https://web.mit.edu" target="_blank"> Massachusetts Institute of Technology (MIT); Cambridge, MA </a>
   </small>
   
@@ -15,9 +15,9 @@ profile:
   image: prof_pic.jpg
   address: <br>
 
+social: true  # includes social icons at the bottom of the page
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
 
@@ -25,12 +25,12 @@ Hello! My name is Shoumik and I'm a first-year PhD student in quantum engineerin
 
 This summer I be working as a Research Scientist intern at Amazon Web Services (AWS), at the AWS-Caltech Centre for Quantum Computing.
 
-I previously received a B.S. in Mathematics and Physics at Yale University, where I was fortunate to work with Profs. Michel Devoret, Liang Jiang, and David Moore. As an undergraduate, I also worked as a Junior Quantum Engineer at [Rigetti Computing](https://www.rigetti.com/).
+I previously received a B.S. in Mathematics and Physics at Yale University, where I was fortunate to do research with Profs. Michel Devoret, Liang Jiang, and David Moore. As an undergraduate, I also spent a year at [Rigetti Computing](https://www.rigetti.com/) as a Junior Quantum Engineer.
 
 
 
 <details>
-  <summary> Dropdown list! </summary>
+  <summary> <b>  Dropdown list!</b> </summary>
 <p>
 <br>
 <b>Undergraduates at McGill:</b>

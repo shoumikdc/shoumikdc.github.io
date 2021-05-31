@@ -43,7 +43,7 @@ github_username: shoumikdc
 twitter_username: # your Twitter handle
 linkedin_username: shoumikdc
 scholar_userid: jheWYGwAAAAJ
-orcid_id: # your ORCID ID
+orcid_id: 0000-0002-7703-5856
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -53,7 +53,7 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 
-contact_note:
+contact_note: Let's have coffee! Please feel free to reach out!
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
@@ -133,10 +133,10 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Chowdhury
+  first_name: [Shoumik, S.]
 
-  style: apa
+  style: ieee
   locale: en
 
   source: /_bibliography/
