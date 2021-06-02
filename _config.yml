@@ -10,7 +10,7 @@ email: shoumik.chowdhury@yale.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Shoumik's Personal Website!
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio">al-folio</a> / <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio">al-folio</a> and <a href="https://pages.github.com/" target="_blank">GitHub</a>.
 
 url:
 baseurl: # the subpath of your site, e.g. /blog/
