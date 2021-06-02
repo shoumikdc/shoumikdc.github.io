@@ -30,8 +30,8 @@ I previously received a B.S. in Mathematics and Physics at Yale University, wher
   <summary> <b>  Dropdown list!</b> </summary>
 <p>
 <br>
-<b>Undergraduates at McGill:</b>
-I welcome these emails, but they should include a CV, research interests, list of relevant course work, a transcript, and your programming experience. The subject line should contain the word "consideration for undergraduate research project" to indicate these instructions have been read.
+<b>Example dropdown list:</b>
+I am testing this HTML code out to see if it is possible to create a dropdown list to collapse useful information on the homepage.
 <br/>
 </p>
 
