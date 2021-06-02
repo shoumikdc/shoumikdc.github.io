@@ -31,7 +31,7 @@ I previously received a B.S. in Mathematics and Physics at Yale University, wher
 <p>
 <br>
 <b>Example dropdown list:</b>
-I am testing this HTML code out to see if it is possible to create a dropdown list to collapse useful information on the homepage.
+I am testing this HTML code out to see if it is possible to create a dropdown list to collapse useful information on the homepage. Test to see!
 <br/>
 </p>
 
