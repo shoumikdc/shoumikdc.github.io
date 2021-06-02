@@ -13,7 +13,7 @@ footer_text: >
   Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio">al-folio</a> and <a href="https://pages.github.com/" target="_blank">GitHub</a>.
 
 url:
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl:
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
