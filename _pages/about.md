@@ -3,10 +3,10 @@ layout: about
 title: about
 permalink: /
 description: |
-  <small><div style="font-size: 16px">
-  Quantum Physicist and Engineer &nbsp; ⟡ &nbsp;  Graduate Research Fellow <br>
-  <a href="https://web.mit.edu" target="_blank"> Massachusetts Institute of Technology (MIT); Cambridge, MA </a>
-  </div></small>
+  <p style="font-size: 16px;"><small> Quantum Physicist and Engineer &nbsp; ⟡ &nbsp; Graduate Research Fellow <br>
+  <a href="https://web.mit.edu" target="_blank"><b> Massachusetts Institute of Technology (MIT); Cambridge, MA </b></a>
+  </small></p>
+  
   
 
 
@@ -20,11 +20,11 @@ news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
-Hello! My name is Shoumik and I'm a first-year PhD student in quantum engineering at MIT. I am broadly interested in experimental and applied theoretical quantum information science, and currently work in the MIT Engineering Quantum Systems ([EQuS](https://equs.mit.edu/)) group, with Prof. Will Oliver. My work is supported by the NSF Graduate Fellowship and the MIT Jacobs Presidential Fellowship.
+Hello! I'm Shoumik, a first-year PhD student in quantum engineering at MIT. I am broadly interested in experimental and applied theoretical quantum information science, and currently work in the MIT Engineering Quantum Systems (**[EQuS](https://equs.mit.edu/)**) group, with Prof. Will Oliver. My work is supported by the NSF Graduate Fellowship and the MIT Jacobs Presidential Fellowship.
 
 This summer I will be working as a Research Scientist intern at Amazon Web Services (AWS), as part of the AWS-Caltech Centre for Quantum Computing.
 
-I previously received a B.S. in Mathematics and Physics at Yale University, where I was fortunate to do research with Profs. Michel Devoret, Liang Jiang, and David Moore. As an undergraduate, I also spent a year at [Rigetti Computing](https://www.rigetti.com/) as a Junior Quantum Engineer.
+I previously received a B.S. in Mathematics and Physics at Yale University, where I was fortunate to do research with Profs. Michel Devoret, Liang Jiang, and David Moore. As an undergraduate, I also spent a year at **[Rigetti Computing](https://www.rigetti.com/)** as a Junior Quantum Engineer.
 
 <details>
   <summary> <b>  Dropdown list!</b> </summary>

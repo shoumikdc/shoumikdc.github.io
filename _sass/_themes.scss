@@ -5,8 +5,10 @@
 :root {
   --global-bg-color: #{$white-color};
   --global-text-color: #{$black-color};
-  --global-theme-color: #{$orange-color};
-  --global-hover-color: #{$light-orange-color};
+  // --global-theme-color: #{$orange-color};
+  // --global-hover-color: #{$light-orange-color};
+  --global-theme-color: #{$red-color-dark};
+  --global-hover-color: #{$red-color};
   --global-footer-bg-color: #{$white-color};
   --global-footer-text-color: #{$black-color};
   --global-footer-link-color: #{$orange-color};
