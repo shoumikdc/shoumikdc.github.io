@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Shoumik
 middle_name: D.
 last_name: Chowdhury
-email: shoumik.chowdhury@yale.com
+email: shoumikc@mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Shoumik's Personal Website!
 footer_text: >
@@ -134,7 +134,7 @@ plugins:
 scholar:
 
   last_name: Chowdhury
-  first_name: [Shoumik, S.]
+  first_name: [Shoumik, S., S. D., Shoumik D., Shoumik Dutta]
 
   style: ieee
   locale: en

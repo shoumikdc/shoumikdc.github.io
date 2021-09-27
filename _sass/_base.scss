@@ -80,7 +80,6 @@ a, table.table a {
   margin-bottom: 2rem;
   font-size: 0.875rem;
   a {
-    color: inherit;
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -369,7 +368,7 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: $grey-color-light;
+    color: $black-color;
     border-top: 1px solid $grey-color-light;
     padding-top: 1rem;
     margin-top: 2rem;

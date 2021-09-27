@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /cv/
-title: cv
-nav: cv
+redirect: https://youtube.com
+title: CV
+nav: true
 ---
 
-<a href="/assets/pdf/vitae.pdf" target="_blank"> Href </a>
-
+See PDF version of my CV <a href="/assets/pdf/vitae.pdf" target="_blank">here</a>.
