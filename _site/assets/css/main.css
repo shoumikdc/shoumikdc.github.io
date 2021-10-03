@@ -30,7 +30,7 @@ body { font-size: 11pt; }
 
 a, table.table a { color: var(--global-theme-color); }
 a:hover, table.table a:hover { color: var(--global-theme-color); text-decoration: underline; }
-a:hover:after, table.table a:hover:after { width: 100%; }
+a:hover:after :not(.nav-item.dropdown), table.table a:hover:after :not(.nav-item.dropdown) { width: 100%; }
 
 .equation { margin-bottom: 1rem; text-align: center; }
 
@@ -46,6 +46,13 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .post-description a:hover { color: var(--global-theme-color); text-decoration: none; }
 
 .navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: 0.95; background-color: var(--global-bg-color); }
+
+.navbar .dropdown-menu { background-color: var(--global-bg-color); }
+.navbar .dropdown-menu a:not(.active) { color: var(--global-text-color); }
+.navbar .dropdown-menu a:hover { color: var(--global-hover-color); }
+
+.dropdown-item { color: var(--global-text-color); }
+.dropdown-item:hover { color: var(--global-hover-color); background-color: var(--global-bg-color); }
 
 .navbar.navbar-light a:hover { text-decoration: none; }
 .navbar.navbar-light .navbar-brand { color: var(--global-text-color); }

@@ -69,8 +69,8 @@
 
     <header>
 
-    <!-- Nav Bar -->
-    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
       <!-- Navbar Toggle -->
@@ -87,18 +87,20 @@
             <a class="nav-link" href="/">
               about
               
-                <span class="sr-only">(current)</span>
+              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
-          <!-- Blog -->
+
+          <!-- Blog: uncomment to add blog to navbar!
           <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
             </a>
-          </li>
+          </li> -->
+
           
           <!-- Other pages -->
           
@@ -108,11 +110,12 @@
           
           
           
+          
           <li class="nav-item ">
-              <a class="nav-link" href="/cv/">
-                CV
-                
-              </a>
+            <a class="nav-link" href="/cv/">
+              CV
+              
+            </a>
           </li>
           
           
@@ -125,39 +128,72 @@
           
           
           
+          
+          
           <li class="nav-item ">
-              <a class="nav-link" href="/projects/">
-                projects
-                
-              </a>
+            <a class="nav-link" href="/projects/">
+              projects
+              
+            </a>
           </li>
           
           
           
+          
+          
           <li class="nav-item ">
-              <a class="nav-link" href="/publications/">
-                publications
-                
-              </a>
+            <a class="nav-link" href="/publications/">
+              publications
+              
+            </a>
           </li>
           
           
           
-          <li class="nav-item ">
-              <a class="nav-link" href="/teaching/">
-                teaching
-                
-              </a>
-          </li>
           
           
-          
-            <div class="toggle-container">
-              <a id="light-toggle">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-              </a>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              submenus
+              
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              
+              
+              <a class="dropdown-item" href="/publications/">publications</a>
+              
+              
+              
+              <div class="dropdown-divider"></div>
+              
+              
+              
+              <a class="dropdown-item" href="/projects/">projects</a>
+              
+              
             </div>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/teaching/">
+              teaching
+              
+            </a>
+          </li>
+          
+          
+          
+          
+          <div class="toggle-container">
+            <a id="light-toggle">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </a>
+          </div>
           
         </ul>
       </div>
@@ -165,7 +201,6 @@
   </nav>
 
 </header>
-
 
     <!-- Content -->
 
@@ -204,9 +239,9 @@
     
 
     <div class="clearfix" style="text-align: justify;">
-      <p>Hello! I’m Shoumik, a first-year Ph.D. student in quantum engineering at MIT. I am broadly interested in experimental and applied theoretical quantum information science, and currently work as a graduate research fellow in the MIT Engineering Quantum Systems (<a href="https://equs.mit.edu/">EQuS</a>) group, with Prof. Will Oliver. My research is supported by the National Science Foundation Graduate Fellowship (<a href="https://www.nsfgrfp.org/">NSF GRFP</a>), and the MIT Jacobs Presidential Fellowship.</p>
+      <p>Hello! I’m Shoumik, a first-year Ph.D. student in quantum engineering at MIT. I am broadly interested in experimental and applied theoretical quantum information science, and currently work as a graduate research fellow in the MIT Engineering Quantum Systems (<a href="https://equs.mit.edu/">EQuS</a>) group, with Prof. Will Oliver. My research is generously supported by the National Science Foundation Graduate Fellowship (<a href="https://www.nsfgrfp.org/">NSF GRFP</a>), and the MIT Jacobs Presidential Fellowship.</p>
 
-<p>Before coming to MIT, I received my B.S. in Mathematics and Physics from Yale University in 2021. At Yale, I was fortunate to carry out undergraduate research with Prof. <a href="https://pme.uchicago.edu/group/jiang-group">Liang Jiang</a> on theoretical quantum transduction, and Prof. <a href="http://qulab.eng.yale.edu/">Michel Devoret</a> on the nonlinear dynamics of strongly-driven superconducting qubits as part of the. During this period, I also spent time working as a Quantum Engineer at <a href="https://www.rigetti.com/">Rigetti Computing</a>, and as Research Scientist intern at the Amazon Web Services (AWS) Centre for Quantum Computing. You can find more details about these experiences and the projects I worked on in the <strong><a href="cv"><code class="language-plaintext highlighter-rouge">CV</code></a></strong> and <strong><a href="projects"><code class="language-plaintext highlighter-rouge">Projects</code></a></strong> sections above!</p>
+<p>Before coming to MIT, I received my B.S. in Mathematics and Physics from Yale University in 2021. At Yale, I was fortunate to carry out undergraduate research with Prof. <a href="https://pme.uchicago.edu/group/jiang-group">Liang Jiang</a> on theoretical quantum transduction, and Prof. <a href="http://qulab.eng.yale.edu/">Michel Devoret</a> on the nonlinear dynamics of strongly-driven superconducting qubits. During this period, I also spent time working as a Quantum Engineer at <a href="https://www.rigetti.com/">Rigetti Computing</a>, and as Research Scientist intern at the Amazon Web Services (AWS) Centre for Quantum Computing. You can find more details about these experiences and the projects I worked on in the <strong><a href="cv"><code class="language-plaintext highlighter-rouge">CV</code></a></strong> and <strong><a href="projects"><code class="language-plaintext highlighter-rouge">Projects</code></a></strong> sections above!</p>
 
 <details>
   <summary> <b>  Dropdown list!</b> </summary>
@@ -231,29 +266,29 @@ I am testing this HTML code out to see if it is possible to create a dropdown li
       
       
         <tr>
-          <th scope="row" style="font-size:11pt">Jan 15, 2016</th>
+          <th scope="row" style="font-size:11pt">Sep 7, 2021</th>
           <td style="font-size:11pt">
             
-              A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+              Started my Ph.D. in EECS and Applied Physics at MIT!
 
             
           </td>
         </tr>
       
         <tr>
-          <th scope="row" style="font-size:11pt">Nov 7, 2015</th>
+          <th scope="row" style="font-size:11pt">Jun 7, 2021</th>
           <td style="font-size:11pt">
             
-              <a class="news-title" href="/news/announcement_2/">A long announcement with details</a>
+              <a class="news-title" href="/news/announcement_2/">Joined AWS Centre for Quantum Computing as a Research Scientist!</a>
             
           </td>
         </tr>
       
         <tr>
-          <th scope="row" style="font-size:11pt">Oct 22, 2015</th>
+          <th scope="row" style="font-size:11pt">May 22, 2021</th>
           <td style="font-size:11pt">
             
-              A simple inline announcement.
+              I graduated from Yale University with a B.S. in Math/Physics! <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
 
             
           </td>
