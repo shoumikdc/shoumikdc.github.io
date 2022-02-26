@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: __Quantum Physicist and Engineer &nbsp;⟡&nbsp; Graduate Research Fellow__ <br> [Massachusetts Institute of Technology (MIT); Cambridge, MA](web.mit.edu/)
   

@@ -13,6 +13,7 @@
   --global-footer-text-color: #{$black-color};
   --global-footer-link-color: #{$orange-color};
   --global-icon-color: #{$grey-color-dark};
+  --global-project-card-color: #{$white-color};
 
 
 
@@ -27,14 +28,16 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #030303; // {$grey-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-theme-color: #{$green-color};
-  --global-hover-color: #{$green-color-dark};
+  --global-bg-color: #{$gold-color-bg};
+  --global-text-color: #{$grey-color-fg};
+  --global-theme-color: #{$link-gold};
+  --global-hover-color: #{$link-gold};
   --global-footer-bg-color: #{$black-color};
-  --global-footer-text-color: #{$white-color};
-  --global-footer-link-color: #{$green-color};
-  --global-icon-color: navajowhite;
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$link-gold};
+  --global-icon-color: #{$grey-color-fg};
+  --global-project-card-color: #{$gold-color-fg};
+
 
   .fa-sun {
     padding-left: 10px;

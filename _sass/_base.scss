@@ -244,8 +244,8 @@ footer.sticky-bottom {
 .header-bar {
   border-bottom: 1px solid $grey-color-light;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
@@ -259,11 +259,16 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid $grey-color-light;
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
     .post-meta {
       color: $grey-color;
       font-size: 0.875rem;
+      vertical-align: middle;
+    }
+    .separator {
+      color: $grey-color;
+      font-size: 1.5rem;
       margin-bottom: 0;
     }
     a {
@@ -353,6 +358,7 @@ footer.sticky-bottom {
       .card-title {
         color: $black-color;
       }
+      background-color: var(--global-project-card-color);
     }
 
   h2.category {

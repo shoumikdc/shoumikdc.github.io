@@ -27,6 +27,12 @@ $yellow-color:        #efcc00 !default;
 $grey-color:          #828282 !default;
 $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
+$gold-color-bg:       rgba(238, 238, 26, 0.068);
+$gold-color-fg:       rgba(255, 255, 0, 0.068);
+$grey-color-fg:       darken($grey-color, 35%);
+$link-gold:           #c59205 !default;
+$link-gold-dark:      #e0b439 !default;
+
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;

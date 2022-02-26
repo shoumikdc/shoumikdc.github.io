@@ -1,10 +1,11 @@
 ---
 layout: page
-permalink: /publications/
-title: publications
+permalink: /Publications/
+title: Publications
 description: 
 years: [2021, 2020, 2017]
 nav: true
+header-position: 3
 ---
 
 <div class="publications">

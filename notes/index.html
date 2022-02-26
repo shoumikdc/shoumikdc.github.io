@@ -4,7 +4,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 3
+  per_page: 5
   sort_field: date
   sort_reverse: true
   trail:
@@ -23,8 +23,11 @@ pagination:
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
+        <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="separator"> · </span>
+          <span class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</span>
+        </h3>
+         
         <p>{{ post.description }}</p>
       </li>
     {% endfor %}

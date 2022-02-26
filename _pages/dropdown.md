@@ -1,12 +1,13 @@
 ---
 layout: page
-title: submenus
+title: Misc.
 nav: true
+header-position: 4
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: Teaching
+      permalink: /teaching/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: Fun
+      permalink: /fun/
 ---

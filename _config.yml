@@ -21,7 +21,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
+navbar_fixed: false
 footer_fixed: false
 
 # Dimensions
@@ -53,7 +53,7 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 
-contact_note: Let's have coffee! Please feel free to reach out!
+contact_note: Please feel free to reach out!
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
@@ -61,16 +61,16 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: blog  # your blog must have a name for it to show up in the nav bar
+blog_name: Notes  # your blog must have a name for it to show up in the nav bar
 blog_description: a mostly random collection of writings
-permalink: /blog/:year/:title/
+permalink: /Notes/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
