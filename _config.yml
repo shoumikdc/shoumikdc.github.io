@@ -63,7 +63,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 blog_name: Notes  # your blog must have a name for it to show up in the nav bar
 blog_description: a mostly random collection of writings
-permalink: /Notes/:year/:title/
+permalink: /notes/:year/:title/
 
 # Pagination
 pagination:
