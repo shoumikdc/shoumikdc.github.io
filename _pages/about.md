@@ -22,14 +22,4 @@ Hello! I'm Shoumik, a first-year Ph.D. student in quantum engineering at MIT. I 
 
 Before coming to MIT, I received my B.S. in Mathematics and Physics from Yale University in 2021. At Yale, I was fortunate to carry out undergraduate research with Prof. [Liang Jiang](https://pme.uchicago.edu/group/jiang-group) on theoretical quantum transduction, and Prof. [Michel Devoret](http://qulab.eng.yale.edu/) on the nonlinear dynamics of strongly-driven superconducting qubits. During this period, I also spent time working as a Quantum Engineer at [Rigetti Computing](https://www.rigetti.com/), and as Research Scientist intern at the Amazon Web Services (AWS) Centre for Quantum Computing. You can find more details about these experiences and the projects I worked on in the **[`CV`](cv)** and **[`Projects`](projects)** sections above!
 
-<details>
-  <summary> <b>  Dropdown list!</b> </summary>
-<p>
-<br>
-<b>Example dropdown list:</b>
-I am testing this HTML code out to see if it is possible to create a dropdown list to collapse useful information on the homepage. Test to see!
-<br/>
-</p>
-
-</details>
 <br>
