@@ -14,7 +14,9 @@
   --global-footer-link-color: #{$orange-color};
   --global-icon-color: #{$grey-color-dark};
   --global-project-card-color: #{$white-color};
-
+  --global-distill-app-color: #{$grey-color};
+  --global-divider-color: rgba(0,0,0,.1);
+  --global-header-dropdown-color: #{$white-color};
 
 
   .fa-sun {
@@ -37,6 +39,7 @@ html[data-theme='dark'] {
   --global-footer-link-color: #{$link-gold};
   --global-icon-color: #{$grey-color-fg};
   --global-project-card-color: #{$gold-color-fg};
+  --global-header-dropdown-color:rgb(255, 255, 225);
 
 
   .fa-sun {

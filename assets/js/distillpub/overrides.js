@@ -17,7 +17,7 @@ $(document).ready(function () {
         cite.shadowRoot.querySelector("style").sheet
             .insertRule("ul li a:hover {color: var(--global-theme-color) !important;}");
         cite.shadowRoot.querySelector("d-hover-box").shadowRoot.querySelector("style").sheet
-            .insertRule(".panel {background-color: var(--global-bg-color) !important;}");
+            .insertRule(".panel {background-color: var(--global-header-dropdown-color) !important;}");
         cite.shadowRoot.querySelector("d-hover-box").shadowRoot.querySelector("style").sheet
             .insertRule(".panel {border-color: var(--global-divider-color) !important;}");
     });

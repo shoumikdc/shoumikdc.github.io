@@ -93,11 +93,11 @@ a, table.table a {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
-  opacity: 0.95;
+  opacity: 1;
   background-color: var(--global-bg-color);
 }
 .navbar .dropdown-menu {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-header-dropdown-color);
   a:not(.active) {
     color: var(--global-text-color);
   }
@@ -334,8 +334,9 @@ footer.sticky-bottom {
 // Distill
 
 .distill {
+  color: var(--global-header-dropdown-color);
   a:hover {
-    border-bottom-color: var(--global-theme-color);
+    border-bottom-color: var(--global-header-dropdown-color);
     text-decoration: none;
   }
 }
