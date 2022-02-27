@@ -4,9 +4,9 @@
  
 :root {
   --global-bg-color: #{$white-color};
+  --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
-  // --global-theme-color: #{$orange-color};
-  // --global-hover-color: #{$light-orange-color};
+  --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$red-color-dark};
   --global-hover-color: #{$red-color};
   --global-footer-bg-color: #{$white-color};

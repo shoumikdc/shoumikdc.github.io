@@ -106,6 +106,8 @@ GEM
     html-pipeline (2.14.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    htmlbeautifier (1.4.1)
+    htmlcompressor (0.4.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -122,6 +124,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.1.1)
@@ -144,6 +148,8 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-imagemagick (1.4.0)
+      jekyll (>= 3.4)
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
@@ -175,6 +181,9 @@ GEM
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-swiss (1.0.0)
+    jekyll-target-blank (2.0.0)
+      jekyll (>= 3.0, < 5.0)
+      nokogiri (~> 1.10)
     jekyll-theme-architect (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -217,7 +226,6 @@ GEM
       jekyll-seo-tag (~> 2.0)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
-    jekyll-twitter-plugin (2.1.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.12.0)
@@ -292,6 +300,7 @@ GEM
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
     unicode_utils (1.4.0)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -300,14 +309,20 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  htmlbeautifier
+  htmlcompressor
   jekyll
+  jekyll-archives
   jekyll-email-protect
   jekyll-github-metadata
+  jekyll-imagemagick
   jekyll-paginate-v2
   jekyll-scholar
-  jekyll-twitter-plugin
+  jekyll-sitemap
+  jekyll-target-blank
   jemoji
   unicode_utils
+  webrick
 
 BUNDLED WITH
-   2.2.18
+   2.3.8
