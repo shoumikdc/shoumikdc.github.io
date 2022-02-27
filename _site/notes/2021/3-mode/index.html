@@ -141,7 +141,8 @@
     <!-- Header --><header>
 
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+  <nav id="navbar"
+    class="navbar navbar-light navbar-expand-sm sticky-top">
     <div class="container">
       
       <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
@@ -149,7 +150,8 @@
       </a>
       
       <!-- Navbar Toggle -->
-      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
@@ -230,7 +232,8 @@
           
           
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Misc.
               
             </a>
@@ -309,11 +312,11 @@
 
         <p><strong>NOTE:</strong>
 Citations, footnotes, and code blocks do not display correctly in the dark mode since distill does not support the dark mode by default.
-If you are interested in correctly adding dark mode support for distill, please open <a href="https://github.com/alshedivat/al-folio/discussions" target="_blank" rel="noopener noreferrer">a discussion</a> and let us know.</p>
+If you are interested in correctly adding dark mode support for distill, please open <a href="https://github.com/alshedivat/al-folio/discussions">a discussion</a> and let us know.</p>
 
 <h2 id="equations">Equations</h2>
 
-<p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/" target="_blank" rel="noopener noreferrer">MathJax 3</a> engine.
+<p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/">MathJax 3</a> engine.
 You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>.
 If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).</p>
 
@@ -322,9 +325,9 @@ Here is an example:</p>
 
 \[\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)\]
 
-<p>Note that MathJax 3 is <a href="https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html" target="_blank" rel="noopener noreferrer">a major re-write of MathJax</a> that brought a significant improvement to the loading and rendering speed, which is now <a href="http://www.intmath.com/cg5/katex-mathjax-comparison.php" target="_blank" rel="noopener noreferrer">on par with KaTeX</a>.</p>
+<p>Note that MathJax 3 is <a href="https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html">a major re-write of MathJax</a> that brought a significant improvement to the loading and rendering speed, which is now <a href="http://www.intmath.com/cg5/katex-mathjax-comparison.php">on par with KaTeX</a>.</p>
 
-<hr>
+<hr />
 
 <h2 id="citations">Citations</h2>
 
@@ -338,14 +341,14 @@ If you have an appendix, a bibliography is automatically created and populated i
 <p>Distill chose a numerical inline citation style to improve readability of citation dense articles and because many of the benefits of longer citations are obviated by displaying more information on hover.
 However, we consider it good style to mention author last names if you discuss something at length and it fits into the flow well — the authors are human and it’s nice for them to have the community associate them with their work.</p>
 
-<hr>
+<hr />
 
 <h2 id="footnotes">Footnotes</h2>
 
 <p>Just wrap the text you would like to show up in a footnote in a <code class="language-plaintext highlighter-rouge">&lt;d-footnote&gt;</code> tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote></p>
 
-<hr>
+<hr />
 
 <h2 id="code-blocks">Code Blocks</h2>
 
@@ -368,7 +371,7 @@ You can always use the default code-highlight using the <code class="language-pl
   <span class="k">return</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<hr>
+<hr />
 
 <h2 id="layouts">Layouts</h2>
 
@@ -414,7 +417,7 @@ It does not interrupt the normal flow of <code class="language-plaintext highlig
   <p>.l-gutter</p>
 </div>
 
-<hr>
+<hr />
 
 <h2 id="other-typography">Other Typography?</h2>
 
@@ -447,20 +450,20 @@ It does not interrupt the normal flow of <code class="language-plaintext highlig
   <li>Or pluses</li>
 </ul>
 
-<p><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">I’m an inline-style link</a></p>
+<p><a href="https://www.google.com">I’m an inline-style link</a></p>
 
-<p><a href="https://www.google.com" title="Google's Homepage" target="_blank" rel="noopener noreferrer">I’m an inline-style link with title</a></p>
+<p><a href="https://www.google.com" title="Google's Homepage">I’m an inline-style link with title</a></p>
 
-<p><a href="https://www.mozilla.org" target="_blank" rel="noopener noreferrer">I’m a reference-style link</a></p>
+<p><a href="https://www.mozilla.org">I’m a reference-style link</a></p>
 
 <p><a href="../blob/master/LICENSE">I’m a relative reference to a repository file</a></p>
 
-<p><a href="http://slashdot.org" target="_blank" rel="noopener noreferrer">You can use numbers for reference-style link definitions</a></p>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
 
-<p>Or leave it empty and use the <a href="http://www.reddit.com" target="_blank" rel="noopener noreferrer">link text itself</a>.</p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
 
 <p>URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <a href="http://www.example.com" target="_blank" rel="noopener noreferrer">http://www.example.com</a> and sometimes 
+http://www.example.com or <a href="http://www.example.com">http://www.example.com</a> and sometimes 
 example.com (but not on Github, for example).</p>
 
 <p>Some text to show that the reference links can follow later.</p>
@@ -468,10 +471,10 @@ example.com (but not on Github, for example).</p>
 <p>Here’s our logo (hover to see the title text):</p>
 
 <p>Inline-style: 
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1" /></p>
 
 <p>Reference-style: 
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2" /></p>
 
 <p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
 
@@ -571,8 +574,8 @@ This line is only separated by a single newline, so it’s a separate line in th
     <!-- Footer -->
 <footer class="sticky-bottom mt-5">
   <div class="container">
-    © Shoumik D. Chowdhury 2022.
-    Built with <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    &copy; Shoumik D. Chowdhury 2022.
+    Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> / <a href="https://github.com/alshedivat/al-folio">al-folio</a> and <a href="https://pages.github.com/" target="_blank">GitHub</a>.
 
     
     
