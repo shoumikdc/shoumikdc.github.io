@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Shoumik
-middle_name: D.
+middle_name:
 last_name: Chowdhury
 email: shoumikc@mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -47,8 +47,6 @@ medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
 
 contact_note: Please feel free to reach out!
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
@@ -83,7 +81,7 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_limit: 5
+news_limit: 10
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

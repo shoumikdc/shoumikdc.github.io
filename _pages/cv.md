@@ -3,7 +3,7 @@ layout: page
 permalink: /cv/
 title: CV
 header-position: 1
-nav: true
+nav: false
 ---
 
 <!---See PDF version of my CV <a href="/assets/pdf/vitae.pdf" target="_blank">here</a>.
