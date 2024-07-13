@@ -57,7 +57,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # -----------------------------------------------------------------------------
 
 blog_name: Notes  # your blog must have a name for it to show up in the nav bar
-blog_description: an assortment of notes and other writings
+blog_description: assorted notes and other writing
 permalink: /notes/:year/:title/
 
 # Pagination
@@ -122,7 +122,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings
@@ -143,7 +142,7 @@ remove_HTML_comments: false
 beautify: false # This function has conflict with the code snippets, they can be displayed incorrectly
 
 # HTML minify (_plugins/minify.rb) Thanks to: https://www.ffbit.com/blog/2021/03/17/html-minification-in-jekyll.html
-minify: false
+minify: true
 
 # CSS/SASS minify
 sass:
@@ -193,7 +192,7 @@ scholar:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false
+enable_google_analytics:    true
 enable_panelbear_analytics: false
 enable_mansory:             true
 enable_math:                true
