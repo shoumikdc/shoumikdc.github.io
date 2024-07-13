@@ -19,4 +19,4 @@ Joseph. A Valery, Shoumik Chowdhury, Glenn Jones, and Nicolas Didier. PRX Quantu
 Mengzhen Zhang, Shoumik Chowdhury, and Liang Jiang. npj Quantum Information, 2022. [[arXiv](https://arxiv.org/abs/2007.02385){:target="_blank"}] [[html](https://www.nature.com/articles/s41534-022-00581-9){:target="_blank"}]
 
 - **Comparing weak and projective measurements for quantum state tomography of a single-qubit system**. \
-Shoumik Chowdhury. Unpublished research manuscript, 2017. [[arXiv](https://arxiv.org/abs/1711.03645){:target="_blank"}]
+Shoumik Chowdhury. Research manuscript, 2017. [[arXiv](https://arxiv.org/abs/1711.03645){:target="_blank"}]
