@@ -2,7 +2,7 @@
 layout: page
 permalink: /fun/
 title: For Fun
-description: Fun Stuff
+description:
 nav: false
 ---
 

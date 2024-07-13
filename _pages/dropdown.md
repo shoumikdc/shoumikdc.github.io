@@ -2,9 +2,12 @@
 layout: page
 title: Misc.
 nav: true
-header-position: 4
+header-position: 3
 dropdown: true
-children: 
+children:
+    - title: Projects
+      permalink: /projects
+    - title: divider
     - title: Teaching
       permalink: /teaching/
     - title: divider
