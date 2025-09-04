@@ -84,7 +84,7 @@
             theme = 'dark';
         }
       }
-      if (theme) {
+      if (theme) {  
         document.documentElement.setAttribute('data-theme', theme);
       }
       localStorage.setItem("theme", theme);
@@ -93,6 +93,27 @@
   })();
 </script>
 
+
+<!-- Critical CSS to prevent font and styling glitches -->
+<style>
+  /* Prevent navbar font size glitches by setting explicit sizes */
+  .navbar {
+    font-size: 11pt;
+  }
+  .navbar .nav-link {
+    font-size: 11pt;
+  }
+  .navbar .navbar-brand {
+    font-size: 11pt;
+  }
+  /* Ensure consistent font loading */
+  body {
+    font-size: 11pt;
+  }
+  
+  
+  /* Let navbar links inherit natural weight - only active item will be bold via main CSS */
+</style>
 
     <!-- MathJax -->
   <script type="text/javascript">
