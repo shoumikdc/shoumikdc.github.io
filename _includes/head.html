@@ -11,12 +11,68 @@
 <link rel="dns-prefetch" href="//gitcdn.link">
 <link rel="dns-prefetch" href="//unpkg.com">
 
-<!-- Preload critical images -->
+<!-- Preload critical resources for faster loading -->
+<link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+<link rel="preload" href="{{ '/assets/js/common.js' | relative_url }}" as="script">
 <link rel="preload" href="{{ '/assets/img/sc.webp' | relative_url }}" as="image" type="image/webp">
 
+<!-- Image optimization hints -->
+<link rel="preload" href="{{ '/assets/img/favicon.ico' | relative_url }}" as="image" type="image/x-icon">
+
+<!-- Preload critical scripts for faster page transitions -->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@{{ site.jquery.version }}/dist/jquery.min.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@{{ site.bootstrap.version }}/dist/js/bootstrap.min.js" as="script" crossorigin="anonymous">
+
+<!-- Preload critical CSS resources for faster rendering -->
+<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/{{ site.bootstrap.version }}/css/bootstrap.min.css" as="style" crossorigin="anonymous">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{ site.fontawesome.version }}/css/all.min.css" as="style" crossorigin="anonymous">
+
+<!-- Preload Academicons only on pages that need it -->
+{% if page.url contains 'publications' or page.url contains 'about' %}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/{{ site.academicons.version }}/css/academicons.min.css" as="style" crossorigin="anonymous">
+{% endif %}
+
+<!-- Preload Notes section resources -->
+{% if page.url contains 'notes' %}
+<link rel="preload" href="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js" as="script" crossorigin="anonymous">
+{% endif %}
+
+<!-- Preload all site pages for faster navigation -->
+{% unless page.url == '/' %}
+<link rel="prefetch" href="{{ '/' | relative_url }}">
+{% endunless %}
+{% unless page.url contains 'notes' %}
+<link rel="prefetch" href="{{ '/notes/' | relative_url }}">
+{% endunless %}
+{% unless page.url contains 'projects' %}
+<link rel="prefetch" href="{{ '/projects/' | relative_url }}">
+{% endunless %}
+{% unless page.url contains 'publications' %}
+<link rel="prefetch" href="{{ '/publications/' | relative_url }}">
+{% endunless %}
+{% unless page.url contains 'teaching' %}
+<link rel="prefetch" href="{{ '/teaching/' | relative_url }}">
+{% endunless %}
+{% unless page.url contains 'cv' %}
+<link rel="prefetch" href="{{ '/cv/' | relative_url }}">
+{% endunless %}
+{% unless page.url contains 'fun' %}
+<link rel="prefetch" href="{{ '/fun/' | relative_url }}">
+{% endunless %}
+
 <!-- Preconnect to external domains for faster loading -->
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://unpkg.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
+
+<!-- Additional DNS prefetch for better performance -->
+<link rel="dns-prefetch" href="//unpkg.com">
 
 <title>{% if site.title == blank %}{{ site.title }}{% else %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endif %}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
 <meta name="description" content="{{ site.description }}">
@@ -40,9 +96,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/{{ site.academicons.version }}/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous">
 <!--link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"-->
 
-<!-- Font -->
+<!-- Font optimization -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"></noscript>
 
 <!-- Code Syntax Highlighting -->
 <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/{{ site.highlight_theme }}.css" />
@@ -50,7 +107,20 @@
 <!-- Styles -->
 <!--<link rel="shortcut icon" type="image/png" href="{{ '/assets/img/favicon.png?' | relative_url }}">-->
 <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico?' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<!-- Critical CSS inline for faster rendering -->
+<style>
+  /* Critical above-the-fold styles */
+  .navbar { font-size: 11pt; }
+  .navbar .nav-link { font-size: 11pt; }
+  .navbar .navbar-brand { font-size: 11pt; }
+  body { font-size: 11pt; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .mt-5 { margin-top: 3rem !important; }
+</style>
+
+<!-- Load main CSS asynchronously -->
+<link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
 
@@ -83,23 +153,3 @@
 </script>
 {% endif %}
 
-<!-- Critical CSS to prevent font and styling glitches -->
-<style>
-  /* Prevent navbar font size glitches by setting explicit sizes */
-  .navbar {
-    font-size: 11pt;
-  }
-  .navbar .nav-link {
-    font-size: 11pt;
-  }
-  .navbar .navbar-brand {
-    font-size: 11pt;
-  }
-  /* Ensure consistent font loading */
-  body {
-    font-size: 11pt;
-  }
-  
-  
-  /* Let navbar links inherit natural weight - only active item will be bold via main CSS */
-</style>

@@ -24,14 +24,16 @@
 
   </body>
 
-  <!-- JQuery (moved from head for better performance) -->
+  <!-- Critical scripts for faster page transitions -->
   <script defer src="https://cdn.jsdelivr.net/npm/jquery@{{ site.jquery.version }}/dist/jquery.min.js" integrity="{{ site.jquery.integrity }}" crossorigin="anonymous"></script>
+  <script defer src="{{ '/assets/js/common.js' | relative_url }}"></script>
   
-  <!-- Theming (theme initialization moved to head, only toggle functionality here) -->
+  <!-- Theming -->
   {% if site.enable_darkmode %}
     <script defer src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
   {% endif %}
   
+  <!-- Bootstrap and other scripts -->
   {% include scripts/bootstrap.html %}
   {% include scripts/mansory.html %}
   {% include scripts/misc.html %}

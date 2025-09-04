@@ -15,12 +15,63 @@
 <link rel="dns-prefetch" href="//gitcdn.link">
 <link rel="dns-prefetch" href="//unpkg.com">
 
-<!-- Preload critical images -->
+<!-- Preload critical resources for faster loading -->
+<link rel="preload" href="/assets/css/main.css" as="style">
+<link rel="preload" href="/assets/js/common.js" as="script">
 <link rel="preload" href="/assets/img/sc.webp" as="image" type="image/webp">
 
+<!-- Image optimization hints -->
+<link rel="preload" href="/assets/img/favicon.ico" as="image" type="image/x-icon">
+
+<!-- Preload critical scripts for faster page transitions -->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" as="script" crossorigin="anonymous">
+
+<!-- Preload critical CSS resources for faster rendering -->
+<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style" crossorigin="anonymous">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" as="style" crossorigin="anonymous">
+
+<!-- Preload Academicons only on pages that need it -->
+
+
+<!-- Preload Notes section resources -->
+
+
+<!-- Preload all site pages for faster navigation -->
+
+<link rel="prefetch" href="/">
+
+
+<link rel="prefetch" href="/notes/">
+
+
+<link rel="prefetch" href="/projects/">
+
+
+<link rel="prefetch" href="/publications/">
+
+
+<link rel="prefetch" href="/teaching/">
+
+
+<link rel="prefetch" href="/cv/">
+
+
+<link rel="prefetch" href="/fun/">
+
+
 <!-- Preconnect to external domains for faster loading -->
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://unpkg.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
+
+<!-- Additional DNS prefetch for better performance -->
+<link rel="dns-prefetch" href="//unpkg.com">
 
 <title>Shoumik  Chowdhury | Announcement_3</title>
 <meta name="description" content="Shoumik's Personal Website!
@@ -38,17 +89,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
 <!--link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"-->
 
-<!-- Font -->
+<!-- Font optimization -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"></noscript>
 
 <!-- Code Syntax Highlighting -->
 <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/.css" />
 
 <!-- Styles -->
 <!--<link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">-->
-<link rel="shortcut icon" href="/assets/img/favicon.ico?">
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico?">
+<!-- Critical CSS inline for faster rendering -->
+<style>
+  /* Critical above-the-fold styles */
+  .navbar { font-size: 11pt; }
+  .navbar .nav-link { font-size: 11pt; }
+  .navbar .navbar-brand { font-size: 11pt; }
+  body { font-size: 11pt; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .mt-5 { margin-top: 3rem !important; }
+</style>
+
+<!-- Load main CSS asynchronously -->
+<link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
 
 <link rel="canonical" href="/news/announcement_3/">
 
@@ -81,26 +146,6 @@
 </script>
 
 
-<!-- Critical CSS to prevent font and styling glitches -->
-<style>
-  /* Prevent navbar font size glitches by setting explicit sizes */
-  .navbar {
-    font-size: 11pt;
-  }
-  .navbar .nav-link {
-    font-size: 11pt;
-  }
-  .navbar .navbar-brand {
-    font-size: 11pt;
-  }
-  /* Ensure consistent font loading */
-  body {
-    font-size: 11pt;
-  }
-  
-  
-  /* Let navbar links inherit natural weight - only active item will be bold via main CSS */
-</style>
 
     <!-- MathJax -->
   <script type="text/javascript">
@@ -123,7 +168,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
     <div class="container">
       
-      <!-- <a class="navbar-brand title font-weight-lighter" href="/">
+      <!-- <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
         <span style="font-size:11pt"><span class="font-weight-bold">Shoumik</span>  Chowdhury</span> 
       </a> -->
       
@@ -295,40 +340,45 @@
 
   </body>
 
-  <!-- JQuery (moved from head for better performance) -->
+  <!-- Critical scripts for faster page transitions -->
   <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/common.js"></script>
   
-  <!-- Theming (theme initialization moved to head, only toggle functionality here) -->
+  <!-- Theming -->
   
     <script defer src="/assets/js/dark_mode.js"></script>
   
   
+  <!-- Bootstrap and other scripts -->
   <!-- Bootsrap & MDB scripts -->
 <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
 
   
-<!-- Mansory & imagesLoaded - Conditional Loading -->
+<!-- Mansory & imagesLoaded - Optimized Loading -->
 <script>
   // Only load masonry if grid elements are present
   document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.grid')) {
-      // Load masonry scripts dynamically
-      const masonryScript = document.createElement('script');
-      masonryScript.src = 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js';
-      masonryScript.defer = true;
-      document.head.appendChild(masonryScript);
+      // Load masonry scripts with better error handling
+      const loadScript = (src) => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = src;
+          script.defer = true;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      };
       
-      const imagesLoadedScript = document.createElement('script');
-      imagesLoadedScript.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
-      imagesLoadedScript.defer = true;
-      document.head.appendChild(imagesLoadedScript);
-      
-      const mansoryScript = document.createElement('script');
-      mansoryScript.src = '/assets/js/mansory.js';
-      mansoryScript.defer = true;
-      document.head.appendChild(mansoryScript);
+      // Load scripts in parallel for faster execution
+      Promise.all([
+        loadScript('https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'),
+        loadScript('https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'),
+        loadScript('/assets/js/mansory.js')
+      ]).catch(error => console.warn('Masonry loading failed:', error));
     }
   });
 </script>
