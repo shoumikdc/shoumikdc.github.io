@@ -645,13 +645,15 @@ code {
 }
 
 
-// Transitioning Themes
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+// Smooth transitions for theme switching, but exclude MathJAX elements
+*:not(.MathJax):not(.MathJax *) {
+  transition: color 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
+}
+
+// Ensure MathJAX elements have no transitions to prevent performance issues
+.MathJax,
+.MathJax * {
+  transition: none !important;
 }
 
 html {
