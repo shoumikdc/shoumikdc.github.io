@@ -650,10 +650,11 @@ code {
   transition: color 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
 }
 
-// Ensure MathJAX elements have no transitions to prevent performance issues
+// Ensure MathJAX elements change color instantly to match page transitions
 .MathJax,
 .MathJax * {
   transition: none !important;
+  color: var(--global-text-color) ease 0.2s !important;
 }
 
 html {
