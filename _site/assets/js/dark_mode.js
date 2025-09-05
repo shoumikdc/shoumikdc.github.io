@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
     const mode_toggle = document.getElementById("light-toggle");
 
-    mode_toggle.addEventListener("click", function () {
+    mode_toggle.addEventListener("click", function() {
         const temp = localStorage.getItem("theme");
         toggleTheme(temp);
     });
@@ -14,7 +14,7 @@ $(document).ready(function () {
         }
     }
 
-    let setTheme = (theme) => {
+    let setTheme = (theme) =>  {
         trans();
         if (theme) {
             document.documentElement.setAttribute("data-theme", theme)
@@ -32,4 +32,3 @@ $(document).ready(function () {
         }, 500)
     }
 });
-
