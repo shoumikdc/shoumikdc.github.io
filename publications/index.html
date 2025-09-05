@@ -33,11 +33,10 @@
 
 <!-- Preload Academicons only on pages that need it -->
 
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" as="style" crossorigin="anonymous">
+
 
 <!-- Preload Notes section resources -->
-
-<link rel="preload" href="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" as="script" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js" as="script" crossorigin="anonymous">
 
 
 <!-- Preload all site pages for faster navigation -->
@@ -45,11 +44,11 @@
 <link rel="prefetch" href="/">
 
 
+<link rel="prefetch" href="/notes/">
+
 
 <link rel="prefetch" href="/projects/">
 
-
-<link rel="prefetch" href="/publications/">
 
 
 <link rel="prefetch" href="/teaching/">
@@ -74,7 +73,7 @@
 <!-- Additional DNS prefetch for better performance -->
 <link rel="dns-prefetch" href="//unpkg.com">
 
-<title>Shoumik  Chowdhury | Notes</title>
+<title>Shoumik  Chowdhury | Publications</title>
 <meta name="description" content="Shoumik's Personal Website!
 ">
 
@@ -116,7 +115,7 @@
 <link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
 
-<link rel="canonical" href="/notes/">
+<link rel="canonical" href="/publications/">
 
 
 <!-- CSS Loading Script -->
@@ -238,9 +237,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/publications/">
               Publications
+              
+              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -286,11 +287,9 @@
           
 
           <!-- Blog: uncomment to add blog to navbar! -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/notes/">
               Notes
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -317,91 +316,39 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+<div class="post">
 
-  <div class="header-bar">
-    <h1>Notes</h1>
-    <h2>assorted notes and other writing</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Publications</h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <p>In general, my <strong><a href="https://scholar.google.com/citations?user=jheWYGwAAAAJ" target="_blank"><code class="language-plaintext highlighter-rouge">Google Scholar</code></a></strong> page will likely have the most up to date list. Here are some selected works:</p>
 
-  <ul class="post-list">
-    
+<ul>
+  <li>
+    <p><strong>A diagrammatic method to compute the effective Hamiltonian of driven nonlinear oscillators</strong>. <br />
+Xu Xiao, Jayameenakshi Venkatraman, Rodrigo G. Cortiñas, Shoumik Chowdhury, and Michel H. Devoret. Under review, 2023. [<a href="https://arxiv.org/abs/2304.13656" target="_blank">arXiv</a>]</p>
+  </li>
+  <li>
+    <p><strong>Dynamical sweet spot engineering via two-tone flux modulation of superconducting qubits</strong>. <br />
+Joseph A. Valery, Shoumik Chowdhury, Glenn Jones, and Nicolas Didier. PRX Quantum, 2022. [<a href="https://arxiv.org/abs/2104.07835" target="_blank">arXiv</a>] [<a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.020337" target="_blank">html</a>]</p>
+  </li>
+  <li>
+    <p><strong>Universal interference-based construction of Gaussian operations in hybrid quantum systems</strong>. <br />
+Mengzhen Zhang, Shoumik Chowdhury, and Liang Jiang. npj Quantum Information, 2022. [<a href="https://arxiv.org/abs/2007.02385" target="_blank">arXiv</a>] [<a href="https://www.nature.com/articles/s41534-022-00581-9" target="_blank">html</a>]</p>
+  </li>
+  <li>
+    <p><strong>Comparing weak and projective measurements for quantum state tomography of a single-qubit system</strong>. <br />
+Shoumik Chowdhury. Research manuscript, 2017. [<a href="https://arxiv.org/abs/1711.03645" target="_blank">arXiv</a>]</p>
+  </li>
+</ul>
 
-    
-    
-    
-
-
-      <li>
-        <h3><a class="post-title" href="/notes/2022/subharmonic/">Driven Transmon Physics</a>
-          <span class="separator"> · </span>
-          <span class="post-meta">March 26, 2022</span>
-        </h3>
-         
-        <p style="margin-bottom:0;">Notes on superconducting qubit control via resonant and subharmonic drives</p>
-        <p class="post-tags">
-          <a href="/notes/2022">
-            <i class="fas fa-calendar fa-sm"></i> 2022 </a>
-  
-            
-            &nbsp; &middot; &nbsp;
-              
-              <a href="/notes/tag/physics">
-                <i class="fas fa-hashtag fa-sm"></i> physics</a> &nbsp;
-                
-              <a href="/notes/tag/qubits">
-                <i class="fas fa-hashtag fa-sm"></i> qubits</a> &nbsp;
-                
-              <a href="/notes/tag/quantum">
-                <i class="fas fa-hashtag fa-sm"></i> quantum</a> &nbsp;
-                
-            
-  
-            
-      </p>
-
-      </li>
-    
-
-    
-    
-    
-
-
-      <li>
-        <h3><a class="post-title" href="/notes/2022/jekyll/">Setting Up Jekyll</a>
-          <span class="separator"> · </span>
-          <span class="post-meta">February 25, 2022</span>
-        </h3>
-         
-        <p style="margin-bottom:0;">A few helpful links for installing Ruby/Jekyll for Web Development</p>
-        <p class="post-tags">
-          <a href="/notes/2022">
-            <i class="fas fa-calendar fa-sm"></i> 2022 </a>
-  
-            
-            &nbsp; &middot; &nbsp;
-              
-              <a href="/notes/tag/code">
-                <i class="fas fa-hashtag fa-sm"></i> code</a> &nbsp;
-                
-              <a href="/notes/tag/websites">
-                <i class="fas fa-hashtag fa-sm"></i> websites</a> &nbsp;
-                
-            
-  
-            
-      </p>
-
-      </li>
-    
-  </ul>
-
-  
+  </article>
 
 </div>
-
     </div>
 
     <!-- Footer -->
