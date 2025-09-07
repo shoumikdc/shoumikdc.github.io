@@ -14,7 +14,11 @@
 <!-- Preload critical resources for faster loading -->
 <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
 <link rel="preload" href="{{ '/assets/js/common.js' | relative_url }}" as="script">
-<link rel="preload" href="{{ '/assets/img/sc.webp' | relative_url }}" as="image" type="image/webp">
+
+<!-- Preload headshot only on pages that display it -->
+{% if page.profile and page.profile.image %}
+<link rel="preload" href="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}" as="image" type="image/webp">
+{% endif %}
 
 <!-- Image optimization hints -->
 <link rel="preload" href="{{ '/assets/img/favicon.ico' | relative_url }}" as="image" type="image/x-icon">
